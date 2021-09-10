@@ -13,7 +13,7 @@
     "issues": "https://github.com/AquUpd/BlindFold/issues",
     "sources": "https://github.com/AquUpd/BlindFold"
   },
-  "license": "MIT",
+  "license": "CC BY-NC 3.0",
   "environment": "*",
   "entrypoints": {
     "main": [

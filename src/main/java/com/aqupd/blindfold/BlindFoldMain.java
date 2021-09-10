@@ -1,6 +1,9 @@
 package com.aqupd.blindfold;
 
+import com.aqupd.blindfold.item.BlindFold;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -19,7 +22,7 @@ public class BlindFoldMain implements ModInitializer {
     public static SoundEvent BLINDFOLD_SOUND = new SoundEvent(BLINDFOLD_EQUIP);
 
     public static final ArmorMaterial BlindFoldMaterial = new BlindFoldMaterial();
-    public static final Item BLINDFOLD_ITEM = new ArmorItem(BlindFoldMaterial, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.MISC));
+    public static final BlindFold BLINDFOLD_ITEM = new BlindFold(BlindFoldMaterial, EquipmentSlot.HEAD, new FabricItemSettings().group(ItemGroup.MISC).maxCount(1));
     
     @Override
     public void onInitialize() {
