@@ -1,6 +1,7 @@
 package com.aqupd.blindfold.item;
 
 import com.aqupd.blindfold.BlindFoldMain;
+import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
