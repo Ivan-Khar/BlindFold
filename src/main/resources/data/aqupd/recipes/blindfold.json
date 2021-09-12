@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "LBL",
+        "BLB"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:string"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "minecraft:black_dye"
+        }
+    },
+    "result": {
+		"item": "aqupd:blindfold",
+        "count": 1
+	}
+}
