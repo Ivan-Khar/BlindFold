@@ -14,10 +14,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(InGameHud.class)
 public class BlackScreenMixin {
     private static final Identifier BLACK = new Identifier("aqupd:textures/misc/black.png");
-    private final MinecraftClient client;
-    public BlackScreenMixin(MinecraftClient client) {
-        this.client = client;
-    }
+
+    @Shadow
+    private MinecraftClient client;
+    @Shadow
+    private void renderOverlay(Identifier pumpkinBlur, float v) {}
 
     @Inject(method = "render", at = @At("HEAD"))
     public void render(CallbackInfo info){
@@ -29,6 +30,4 @@ public class BlackScreenMixin {
         }
     }
 
-    @Shadow
-    private void renderOverlay(Identifier pumpkinBlur, float v) {}
 }
